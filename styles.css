@@ -1,0 +1,27 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+} 
+
+.resize-grid {
+    margin: 10px;
+    text-align: center;
+    height: 20px;
+}
+
+.grid {
+    --grid-size: 16;  /* default value */
+    display: flex;
+    flex-wrap: wrap;
+    height: 650px;
+    width: 650px;
+}
+
+.grid-item{
+    flex: 0 0 calc(100% / var(--grid-size));
+    aspect-ratio: 1;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
